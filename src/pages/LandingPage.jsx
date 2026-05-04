@@ -2,15 +2,15 @@ import { useState, useEffect } from 'react';
 
 // Data Mess
 const messData = [
-  { id: 1, name: 'Tenera', location: 'Parapat', kamar: 3, tempatTidur: 5, status: 'Mess Direksi', price: null, pic: 'Abdi Rangkuti', image: 'src/assets/foto-mess/Mess Tenera.webp', available: true },
-  { id: 2, name: 'Horas', location: 'Parapat', kamar: 3, tempatTidur: 6, status: 'Mess Direksi', price: null, pic: 'Rici', image: 'src/assets/foto-mess/Mess Horas.webp', available: false },
-  { id: 3, name: 'Prana', location: 'Parapat', kamar: 5, tempatTidur: 10, status: 'Tarif', price: 800000, pic: 'Dian Kurniaty', image: 'src/assets/foto-mess/Mess Prana.webp', available: true },
-  { id: 4, name: 'Kayu Aro', location: 'Parapat', kamar: 4, tempatTidur: 9, status: 'Tarif', price: 700000, pic: 'Desni', image: 'src/assets/foto-mess/mess kayu aro.webp', available: true },
-  { id: 5, name: 'Oleo I', location: 'Parapat', kamar: 3, tempatTidur: 6, status: 'Tarif', price: 500000, pic: 'Jubesli Sinaga', image: 'src/assets/foto-mess/Mess Oleo I.webp', available: true },
-  { id: 6, name: 'Oleo II', location: 'Parapat', kamar: 4, tempatTidur: 8, status: 'Tarif', price: 500000, pic: 'Jubesli Sinaga', image: 'src/assets/foto-mess/Mess Oleo II.webp', available: true },
+  { id: 1, name: 'Tenera', location: 'Parapat', kamar: 3, tempatTidur: 5, status: 'Mess Direksi', price: null, pic: 'Abdi Rangkuti', image: '/assets/foto-mess/Mess Tenera.webp', available: true },
+  { id: 2, name: 'Horas', location: 'Parapat', kamar: 3, tempatTidur: 6, status: 'Mess Direksi', price: null, pic: 'Rici', image: '/assets/foto-mess/Mess Horas.webp', available: false },
+  { id: 3, name: 'Prana', location: 'Parapat', kamar: 5, tempatTidur: 10, status: 'Tarif', price: 800000, pic: 'Dian Kurniaty', image: '/assets/foto-mess/Mess Prana.webp', available: true },
+  { id: 4, name: 'Kayu Aro', location: 'Parapat', kamar: 4, tempatTidur: 9, status: 'Tarif', price: 700000, pic: 'Desni', image: '/assets/foto-mess/mess kayu aro.webp', available: true },
+  { id: 5, name: 'Oleo I', location: 'Parapat', kamar: 3, tempatTidur: 6, status: 'Tarif', price: 500000, pic: 'Jubesli Sinaga', image: '/assets/foto-mess/Mess Oleo I.webp', available: true },
+  { id: 6, name: 'Oleo II', location: 'Parapat', kamar: 4, tempatTidur: 8, status: 'Tarif', price: 500000, pic: 'Jubesli Sinaga', image: '/assets/foto-mess/Mess Oleo II.webp', available: true },
   { id: 7, name: 'Fisifera', location: 'Parapat', kamar: 2, tempatTidur: 5, status: 'Tarif', price: 300000, pic: 'Sahat Simbolon', image: 'https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=600&auto=format&fit=crop', available: true },
-  { id: 8, name: 'Dura', location: 'Berastagi', kamar: 3, tempatTidur: 6, status: 'Mess Direksi', price: null, pic: 'Nurfi', image: 'src/assets/foto-mess/Mess dura.jpg', available: true },
-  { id: 9, name: 'Capricornus', location: 'Berastagi', kamar: 3, tempatTidur: 6, status: 'Tarif', price: 500000, pic: 'Iwan', image: 'src/assets/foto-mess/mess capricon.jpg', available: false }
+  { id: 8, name: 'Dura', location: 'Berastagi', kamar: 3, tempatTidur: 6, status: 'Mess Direksi', price: null, pic: 'Nurfi', image: '/assets/foto-mess/Mess dura.jpg', available: true },
+  { id: 9, name: 'Capricornus', location: 'Berastagi', kamar: 3, tempatTidur: 6, status: 'Tarif', price: 500000, pic: 'Iwan', image: '/assets/foto-mess/mess capricon.jpg', available: false }
 ];
 
 const formatRupiah = (number) => {
@@ -92,7 +92,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20 items-center">
             <div className="flex-shrink-0 flex items-center">
-              <img className="h-10 md:h-12 w-auto brightness-0 invert" src="src/assets/logo/LOGO-REGIONAL-PTPN4.png" alt="PTPN IV" />
+              <img className="h-10 md:h-12 w-auto brightness-0 invert" src="/assets/logo/LOGO-REGIONAL-PTPN4.png" alt="PTPN IV" />
             </div>
             <div>
               <button onClick={() => document.getElementById('mess-grid').scrollIntoView({ behavior: 'smooth' })} className="bg-white text-[#0a6b3e] hover:bg-gray-100 hover:shadow-lg px-5 py-2.5 rounded-full text-sm font-bold transition duration-300 hidden md:block">
@@ -211,7 +211,7 @@ export default function LandingPage() {
             
             {/* Kolom 1: Alamat & Info */}
             <div className="text-center md:text-left space-y-4">
-              <img src="src/assets/logo/LOGO-REGIONAL-PTPN4.png" className="h-12 w-auto mx-auto md:mx-0 brightness-0 invert opacity-90" alt="PTPN IV" />
+              <img src="/assets/logo/LOGO-REGIONAL-PTPN4.png" className="h-12 w-auto mx-auto md:mx-0 brightness-0 invert opacity-90" alt="PTPN IV" />
               <h4 className="text-xl font-bold tracking-wide mt-4">PT Perkebunan Nusantara IV</h4>
               <p className="text-emerald-100/80 text-sm leading-relaxed max-w-sm mx-auto md:mx-0">
                 Jl. Letjend. Suprapto No.2, Jati, Kec. Medan Maimun<br/>
@@ -224,8 +224,8 @@ export default function LandingPage() {
             <div className="flex flex-col items-center md:items-end">
               <h5 className="text-xs font-bold text-white-300 uppercase tracking-[0.2em] mb-6">Didukung Oleh</h5>
               <div className="flex flex-wrap items-center justify-center md:justify-end gap-6 md:gap-10 opacity-90 hover:opacity-100 transition duration-500">
-                <img src="src/assets/logo/LOGO-DANANTARA.png" className="h-10 md:h-14 w-auto object-contain" alt="Danantara" />
-                <img src="src/assets/logo/LOGO-PTPN.png" className="h-10 md:h-14 w-auto object-contain" alt="Holding Perkebunan" />
+                <img src="/assets/logo/LOGO-DANANTARA.png" className="h-10 md:h-14 w-auto object-contain" alt="Danantara" />
+                <img src="/assets/logo/LOGO-PTPN.png" className="h-10 md:h-14 w-auto object-contain" alt="Holding Perkebunan" />
               </div>
             </div>
 
@@ -442,9 +442,9 @@ export default function LandingPage() {
                 {/* HEADER */}
                 <div className="flex flex-col md:flex-row justify-between items-center md:items-start border-b border-gray-200 pb-6 mb-6 gap-6 md:gap-0">
                   <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
-                    <img src="src/assets/logo/LOGO-DANANTARA.png" className="h-7 sm:h-8 md:h-12 w-auto object-contain grayscale" alt="Danantara" />
-                    <img src="src/assets/logo/LOGO-PTPN.png" className="h-7 sm:h-8 md:h-12 w-auto object-contain grayscale" alt="PTPN" />
-                    <img src="src/assets/logo/LOGO-REGIONAL-PTPN4.png" className="h-7 sm:h-8 md:h-12 w-auto object-contain grayscale" alt="PTPN IV" />
+                    <img src="/assets/logo/LOGO-DANANTARA.png" className="h-7 sm:h-8 md:h-12 w-auto object-contain grayscale" alt="Danantara" />
+                    <img src="/assets/logo/LOGO-PTPN.png" className="h-7 sm:h-8 md:h-12 w-auto object-contain grayscale" alt="PTPN" />
+                    <img src="/assets/logo/LOGO-REGIONAL-PTPN4.png" className="h-7 sm:h-8 md:h-12 w-auto object-contain grayscale" alt="PTPN IV" />
                   </div>
                   <div className="text-center md:text-right text-[12px] md:text-[13px] text-gray-800 leading-tight">
                     <b className="text-[13px] md:text-sm">PT PERKEBUNAN NUSANTARA IV</b><br/>

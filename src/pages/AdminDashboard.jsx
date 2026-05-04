@@ -77,7 +77,7 @@ export default function AdminDashboard() {
       {/* Sidebar */}
       <aside className="w-full md:w-64 bg-[#0a6b3e] text-white flex flex-col shrink-0">
         <div className="p-6 flex items-center justify-center border-b border-white/10 bg-[#085a34]">
-          <img src="/src/assets/logo/LOGO-REGIONAL-PTPN4.png" alt="PTPN IV" className="h-10 w-auto brightness-0 invert" />
+          <img src="/assets/logo/LOGO-REGIONAL-PTPN4.png" alt="PTPN IV" className="h-10 w-auto brightness-0 invert" />
         </div>
         <nav className="flex-1 p-4 space-y-2">
           <button className="w-full flex items-center px-4 py-3 bg-white/10 rounded-xl font-medium text-sm transition">
