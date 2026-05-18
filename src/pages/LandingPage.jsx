@@ -212,7 +212,7 @@ export default function LandingPage() {
             {/* Kolom 1: Alamat & Info */}
             <div className="text-center md:text-left space-y-4">
               <img src="/assets/logo/LOGO-REGIONAL-PTPN4.png" className="h-12 w-auto mx-auto md:mx-0 brightness-0 invert opacity-90" alt="PTPN IV" />
-              <h4 className="text-xl font-bold tracking-wide mt-4">PT Perkebunan Nusantara IV</h4>
+              <h4 className="text-xl font-bold tracking-wide mt-4">PT Perkebunan Nusantara IV Regional II</h4>
               <p className="text-emerald-100/80 text-sm leading-relaxed max-w-sm mx-auto md:mx-0">
                 Jl. Letjend. Suprapto No.2, Jati, Kec. Medan Maimun<br/>
                 Kota Medan, Sumatera Utara 20151<br/>
