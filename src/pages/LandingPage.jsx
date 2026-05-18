@@ -234,9 +234,11 @@ export default function LandingPage() {
           {/* Copyright Area */}
           <div className="mt-16 pt-8 border-t border-emerald-800/50 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-emerald-100/50 text-sm font-medium">&copy; 2026 PTPN IV Regional. Hak Cipta Dilindungi.</p>
-            <div className="flex space-x-6 text-sm text-emerald-100/50">
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-sm text-emerald-100/50">
               <a href="#" className="hover:text-emerald-300 transition">Kebijakan Privasi</a>
               <a href="#" className="hover:text-emerald-300 transition">Syarat & Ketentuan</a>
+              <span className="hidden sm:block text-emerald-800">|</span>
+              <span className="text-emerald-100/40">Dikembangkan oleh <span className="text-emerald-300/80 font-semibold">Putra Fialdy</span></span>
             </div>
           </div>
         </div>
