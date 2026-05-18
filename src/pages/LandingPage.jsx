@@ -115,7 +115,7 @@ export default function LandingPage() {
         <div className="absolute inset-0 bg-gray-900/65 backdrop-blur-sm"></div>
         
         <div className="relative z-10 text-center max-w-3xl mx-auto">
-          <span className="bg-white/20 text-white backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 inline-block border border-white/30">Fasilitas Akomodasi PTPN IV</span>
+          <span className="bg-white/20 text-white backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 inline-block border border-white/30">Fasilitas Akomodasi PTPN IV Regional II</span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight drop-shadow-xl">
             Kenyamanan Eksklusif di <span className="text-emerald-400 block md:inline">Mess Kami</span>
           </h1>
